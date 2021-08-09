@@ -9,19 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @SpringBootApplication
-@RestController
+
 public class AccountMsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(AccountMsApplication.class, args);
 	}
 
-
-	@GetMapping
-	public List<Person> hello(){
-		return List.of(
-				new Person("1", "Camilo Garcia", "gcgarcia@unal.edu.co", 28)
-		);
-	}
 }
 
